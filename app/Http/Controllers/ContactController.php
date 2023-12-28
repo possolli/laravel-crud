@@ -18,7 +18,6 @@ class ContactController extends Controller
     {
         $data = $request->validated();
         Contact::create($data);
-        return to_route('/');
     }
 
     public function update(UpdateContactRequest $request, Contact $contact)
